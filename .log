@@ -1,0 +1,18 @@
+mkdir server && cd server
+pnpm init
+pnpm i typescript --save-dev
+pnpm tsc --init
+
+> Add this in tsconfig.json:
+  "include": ["src/**/*.ts"],
+  "exclude": [],
+
+mkdir src
+touch src/server.ts
+npm install @types/node --save-dev
+> add "es6" in tsconfig.json in "lib" field
+
+pnpm install ts-node nodemon --save-dev
+
+> add below line in package.json in "srcipts" field
+"dev": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/server.ts"
