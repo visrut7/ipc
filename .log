@@ -16,3 +16,6 @@ pnpm install ts-node nodemon --save-dev
 
 > add below line in package.json in "srcipts" field
 "dev": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/server.ts"
+
+pnpm install formidable
+pnpm install @types/formidable --save-dev

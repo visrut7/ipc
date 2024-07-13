@@ -10,9 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/formidable": "^3.4.5",
     "@types/node": "^20.14.10",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "formidable": "^3.5.1"
   }
 }
